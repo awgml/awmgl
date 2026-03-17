@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.Drawing;
+using System.Windows.Forms;
 
 namespace InventoryApp
 {
@@ -57,6 +58,7 @@ namespace InventoryApp
             this.addItemButton.Text = "Добавить";
             this.addItemButton.UseVisualStyleBackColor = true;
             this.addItemButton.Click += new System.EventHandler(this.AddItemButton_Click);
+            this.addItemButton.BackColor = Color.LightGreen;
 
             // removeItemButton
             this.removeItemButton.Location = new System.Drawing.Point(240, 55);
@@ -64,6 +66,7 @@ namespace InventoryApp
             this.removeItemButton.Text = "Удалить";
             this.removeItemButton.UseVisualStyleBackColor = true;
             this.removeItemButton.Click += new System.EventHandler(this.RemoveItemButton_Click);
+            this.removeItemButton.BackColor = Color.LightCoral;
 
             // updateQuantityButton
             this.updateQuantityButton.Location = new System.Drawing.Point(240, 90);
@@ -71,6 +74,7 @@ namespace InventoryApp
             this.updateQuantityButton.Text = "Обновить";
             this.updateQuantityButton.UseVisualStyleBackColor = true;
             this.updateQuantityButton.Click += new System.EventHandler(this.UpdateQuantityButton_Click);
+            this.updateQuantityButton.BackColor = Color.LightYellow;
 
             // itemsListBox
             this.itemsListBox.Location = new System.Drawing.Point(20, 130);
