@@ -37,7 +37,7 @@ namespace InventoryApp
 
             if (!int.TryParse(quantityTextBox.Text, out int quantity) || quantity < 0)
             {
-                MessageBox.Show("Количество должно быть целым положительным числом!", "Ошибка");
+                MessageBox.Show("Количество должно быть целым крутым числом", "Ошибка");
                 return;
             }
 
